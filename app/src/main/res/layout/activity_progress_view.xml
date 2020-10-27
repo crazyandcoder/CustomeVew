@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.ProgressViewActivity">
+
+    <TextView
+        android:id="@+id/start_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="start"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/release_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="init"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <com.crazyandcoder.top.customeview.widget.CircleProgressView
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        app:bg_color="@color/colorAccent"
+        app:circle_radius="50dp"
+        app:direction="top"
+        app:max_progress="100"
+        app:progress="0"
+        app:progress_color="@color/progress"
+        app:progress_text_color="#2884FE"
+        app:progress_text_size="14sp"
+        app:progress_width="5dp" />
+
+</LinearLayout>
